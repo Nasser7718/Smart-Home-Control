@@ -1,0 +1,207 @@
+
+
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="theme-color" content="#101827">
+
+<title>Smart Home Control</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{
+
+ margin:0;
+
+ font-family:Arial,sans-serif;
+
+ background:#101827;
+
+ color:white;
+
+ padding:22px;
+
+}
+
+header{padding:20px 0}
+
+h1{font-size:27px}
+
+p{color:#aab6c7}
+
+.status{
+
+ background:#173b35;
+
+ color:#55e6a5;
+
+ padding:15px;
+
+ border-radius:14px;
+
+ margin:20px 0;
+
+}
+
+.grid{
+
+ display:grid;
+
+ grid-template-columns:1fr 1fr;
+
+ gap:14px;
+
+}
+
+.device{
+
+ background:#202c40;
+
+ padding:20px 14px;
+
+ border-radius:18px;
+
+ text-align:center;
+
+}
+
+.device .emoji{font-size:35px}
+
+.device h3{margin:12px 0}
+
+button{
+
+ border:0;
+
+ border-radius:12px;
+
+ padding:11px 20px;
+
+ background:#367cf6;
+
+ color:white;
+
+ font-size:15px;
+
+}
+
+footer{
+
+ margin-top:30px;
+
+ text-align:center;
+
+ color:#8c9bad;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+ <h1>🏠 منزلي الذكي</h1>
+
+ <p>Smart Home Control</p>
+
+</header>
+
+<div class="status">
+
+ ● واجهة تجريبية جاهزة
+
+</div>
+
+<h2>أجهزة المنزل</h2>
+
+<div class="grid">
+
+ <div class="device">
+
+  <div class="emoji">💡</div>
+
+  <h3>الإضاءة</h3>
+
+  <button onclick="toggle(this)">تشغيل</button>
+
+ </div>
+
+ <div class="device">
+
+  <div class="emoji">❄️</div>
+
+  <h3>المكيف</h3>
+
+  <button onclick="toggle(this)">تشغيل</button>
+
+ </div>
+
+ <div class="device">
+
+  <div class="emoji">📺</div>
+
+  <h3>التلفاز</h3>
+
+  <button onclick="toggle(this)">تشغيل</button>
+
+ </div>
+
+ <div class="device">
+
+  <div class="emoji">🔒</div>
+
+  <h3>قفل الباب</h3>
+
+  <button onclick="toggle(this)">فتح</button>
+
+ </div>
+
+</div>
+
+<footer>
+
+ Smart Home Control © 2026
+
+</footer>
+
+<script>
+
+function toggle(button){
+
+ if(button.textContent==="تشغيل"){
+
+  button.textContent="إيقاف";
+
+ }else if(button.textContent==="إيقاف"){
+
+  button.textContent="تشغيل";
+
+ }else if(button.textContent==="فتح"){
+
+  button.textContent="قفل";
+
+ }else{
+
+  button.textContent="فتح";
+
+ }
+
+}
+
+</script>
+
+</body>
+
+</html>
