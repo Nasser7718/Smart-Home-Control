@@ -1,2 +1,18 @@
-# Smart-Home-Control
-Smart Home Control is an Arabic smart home control application that allows users to monitor and manage smart devices through Home Assistant. The project is designed as a Progressive Web App (PWA) for iPhone and other devices.
+# دار | DAR Smart
+
+واجهة عربية أولية للمنزل الذكي بتصميم كحلي وذهبي.
+
+## الملفات
+- `index.html`: لوحة الغرف والأجهزة والمودات ومحاكاة الحضور.
+- `manifest.webmanifest`: بيانات تثبيت PWA.
+- `sw.js`: تخزين مؤقت أساسي للواجهة.
+- `icon.svg`: أيقونة دار.
+
+## الحالة الحالية
+أزرار الأجهزة والمودات ومستشعرات الغرف تعمل كمحاكاة داخل المتصفح فقط. لا يوجد اتصال فعلي بالأجهزة أو خادم Home Assistant بعد. يتطلب التشغيل الحقيقي إعداد خادم Home Assistant، ومستشعرات فعلية، وربط كيانات الأجهزة، وبناء أتمتة مناسبة.
+
+## التثبيت
+انشر الموقع عبر HTTPS ثم افتحه في متصفح يدعم PWA واختر إضافة إلى الشاشة الرئيسية.
+
+## الأمان
+لا تضع رموز الوصول أو كلمات المرور في ملفات المستودع. سيتم إعداد المصادقة والاتصال الآمن بعد تجهيز خادم Home Assistant.
