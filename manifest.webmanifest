@@ -1,7 +1,7 @@
 {
-  "name": "دار | DAR Smart",
+  "name": "دار",
   "short_name": "دار",
-  "description": "لوحة تحكم المنزل الذكي",
+  "description": "دار - لوحة تحكم المنزل الذكي",
   "lang": "ar",
   "dir": "rtl",
   "start_url": "./",
@@ -11,10 +11,10 @@
   "theme_color": "#0b1020",
   "icons": [
     {
-      "src": "icon.svg",
+      "src": "icon.svg?v=3",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
